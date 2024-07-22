@@ -38,6 +38,71 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+ 
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#reportOutput {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+
+
+  </style>
 </head>
 
 <body>
@@ -318,7 +383,8 @@
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
-     
+      
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="Register.html">
           <i class="bi bi-card-list"></i>
@@ -333,13 +399,6 @@
         </a>
       </li><!-- End Login Page Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="Report.html">
-          <i class="bi bi-cash"></i>
-          <span>Report</span>
-        </a>
-      </li>
-    </li>
-      <li class="nav-item">
         <a class="nav-link collapsed" href="Contact.html">
           <i class="bi bi-envelope"></i>
           <span>Contact</span>
@@ -347,177 +406,33 @@
       </li><!-- End Contact Page Nav -->
 
 
-
     </ul>
 
   </aside><!-- End Sidebar-->
 
-
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Services</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Services</li>
-          <!-- <li class="breadcrumb-item active">General</li> -->
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <!-- <div class="row"> -->
-        <!-- <div class="col-lg-6"> -->
-
-          <!--Default table-->
-          <!--Dark table-->
-          <!--Active table table-->
-           <!-- table without borders table-->
-           <!-- table varients-->
-            <!-- table with stripped rows-->
-              <!-- Table with hoverable rows -->
-
- 
-
-  <div class="card">
-    <div class="card-body">
-      <!-- <h5 class="card-title">Table with stripped rows</h5> -->
-
-      <!-- Table with stripped rows -->
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Service ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-            <th scope="col">Action</th>
-          </tr>
-        </thead>
-        <tbody id="serviceTableBody">
-      <tr>
-        <th scope="row">1</th>
-        <td>Local Car Rentals</td>
-        <td>Taxi service to travel <br> different places in city.</td>
-        <td>₹200/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Airport Taxi</td>
-        <td>Taxi service to and <br>from the airport.</td>
-        <td>₹300/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Out Station Taxi</td>
-        <td>Taxi service for <br> out-of-town travel.</td>
-        <td>₹200/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Corporate Car Rentals</td>
-        <td>Rental services for<br> corporate needs and events.</td>
-        <td>₹200/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Tour Packages</td>
-        <td>City tours: Customized city tours for tourists.</td>
-        <td>₹200/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Event Transportation</td>
-        <td>Transportation solutions for <br>weddings, parties, and other events.</td>
-        <td>₹300/hour</td>
-        <td class="button-container">
-          <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-          <button class="btn btn-danger btn-sm delete-btn">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <button class="btn btn-success" data-toggle="modal" data-target="#editModal" id="addServiceBtn">Add Service</button>
-</div>
-
-<!-- Edit Modal -->
-<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editModalLabel">Edit Service</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="editForm">
-          <div class="form-group">
-            <label for="serviceName">Service Name</label>
-            <input type="text" class="form-control" id="serviceName" required>
-          </div>
-          <div class="form-group">
-            <label for="serviceDescription">Description</label>
-            <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="serviceRate">Rate</label>
-            <input type="text" class="form-control" id="serviceRate" required>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="saveChanges">Save changes</button>
-      </div>
+    <div class="container">
+      <h1>Generate Report</h1>
+      <form id="reportForm">
+        <label for="reportType">Report Type:</label>
+        <select id="reportType" name="reportType">
+          <option value="bookings">Bookings</option>
+          <option value="users">Service</option>
+          <option value="cars">Cars</option>
+          <option value="financial">Pricing</option>
+        </select>
+  
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+  
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+  
+        <button type="button" onclick="generateReport()">Generate Report</button>
+      </form>
+  
+      <div id="reportOutput"></div>
     </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
-
-        
-        <style>
-          .button-container {
-            display: flex;
-            gap: 0.5rem; /* Adjust the gap as needed */
-          }
-        </style>
-        
-        
- 
-      <!-- End Table with stripped rows -->
-
-    </div>
-  </div>
- 
-    </section>
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -534,6 +449,7 @@
     </div>
   </footer><!-- End Footer -->
 
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -545,10 +461,68 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="scripts.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
+
+  <script>
+    function generateReport() {
+      const reportType = document.getElementById('reportType').value;
+      const startDate = document.getElementById('startDate').value;
+      const endDate = document.getElementById('endDate').value;
+
+      // Validate dates
+      if (!startDate || !endDate) {
+        alert('Please select both start and end dates');
+        return;
+      }
+
+      // Fetch data from server (replace with actual server call)
+      fetchReportData(reportType, startDate, endDate).then(data => {
+        displayReport(data);
+      });
+    }
+
+    function fetchReportData(reportType, startDate, endDate) {
+      // Simulated server response
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve([
+            { id: 1, name: 'Sample Data 1', date: startDate },
+            { id: 2, name: 'Sample Data 2', date: endDate },
+          ]);
+        }, 1000);
+      });
+    }
+
+    function displayReport(data) {
+      const reportOutput = document.getElementById('reportOutput');
+      reportOutput.innerHTML = '';
+
+      if (data.length === 0) {
+        reportOutput.innerHTML = '<p>No data available for the selected date range.</p>';
+        return;
+      }
+
+      const table = document.createElement('table');
+      table.border = '1';
+      const header = table.insertRow();
+      header.insertCell(0).innerText = 'ID';
+      header.insertCell(1).innerText = 'Name';
+      header.insertCell(2).innerText = 'Date';
+
+      data.forEach(item => {
+        const row = table.insertRow();
+        row.insertCell(0).innerText = item.id;
+        row.insertCell(1).innerText = item.name;
+        row.insertCell(2).innerText = item.date;
+      });
+
+      reportOutput.appendChild(table);
+    }
+  </script>
 
 </body>
 
