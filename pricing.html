@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard - Online Taxi </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">OnlineTaxi</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>New taxi booking</h4>
+                <p>There is a new booking at 9pm</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Taxi booking cancelled</h4>
+                <p>Taxi booking at today 10am is cancelled</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Taxi booking </h4>
+                <p> Taxi booking at 11pm is rescheduled</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>New taxi booking</h4>
+                <p>There is a new taxi booking at 3pm </p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Booking</h4>
+                  <p>today there is 4 new booking...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Customer rating</h4>
+                  <p>John has rated your taxi service....</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Arun</h4>
+                  <p>Driver David is on leave today...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Marketing Manager</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="admin-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link " href="booking.html">
+          <i class="bi bi-car-front"></i>
+          <span>Booking</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="service.html">
+          <i class="bi bi-card-checklist"></i>
+          <span>Service</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="car.html">
+          <i class="bi bi-car-front-fill"></i>
+          <span>Car</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="pricing.html">
+          <i class="bi bi-cash"></i>
+          <span>Pricing</span>
+        </a>
+      </li>
+
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="FAQ.html">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+     
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Pricing</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Tables</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+        <!-- Featured Vehicles -->
+        <section class="ftco-section ftco-about full-page">
+                <!-- Featured Vehicles -->
+    <section class="ftco-section ftco-about full-page">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-2">
+                    <h2 class="mb-2">Featured Vehicles</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Car Model</th>
+                                <th>Per Hour Rate</th>
+                                <th>Per Day Rate</th>
+                                <th>Leasing</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td><img src="images/Ford fiesta.webp" alt="Ford Fiesta" style="width: 100px;"></td>
+                              <td>Ford Fiesta</td>
+                              <td>₹500</td>
+                              <td>₹3000</td>
+                              <td>₹25,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                              
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Hyundai Creta.webp" alt="Hyundai Creta" style="width: 100px;"></td>
+                              <td>Hyundai Creta</td>
+                              <td>₹600</td>
+                              <td>₹4000</td>
+                              <td>₹30,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Tata Nexon.webp" alt="Tata Nexon" style="width: 100px;"></td>
+                              <td>Tata Nexon</td>
+                              <td>₹550</td>
+                              <td>₹3500</td>
+                              <td>₹27,500</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Hyudai Aura.webp" alt="Hyundai Aura" style="width: 100px;"></td>
+                              <td>Hyundai Aura</td>
+                              <td>₹550</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Mahindra Thar.webp" alt="Mahindra Thar" style="width: 100px;"></td>
+                              <td>Mahindra Thar</td>
+                              <td>₹5000</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                            
+                          </tr>
+                          <tr>
+                              <td><img src="images/Mahindra-Verito.webp" alt="Mahindra Verito" style="width: 100px;"></td>
+                              <td>Mahindra Verito</td>
+                              <td>₹550</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                             
+                          </tr>
+                          <tr>
+                              <td><img src="images/Maruti Suzuki Alto.webp" alt="Maruti Suzuki Alto" style="width: 100px;"></td>
+                              <td>Maruti Suzuki Alto</td>
+                              <td>₹550</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Maruti Suzuki Celerio.webp" alt="Maruti Suzuki Celerio" style="width: 100px;"></td>
+                              <td>Maruti Suzuki Celerio</td>
+                              <td>₹550</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                              
+                          </tr>
+                          <tr>
+                              <td><img src="images/Maruti Swift.webp" alt="Maruti Swift" style="width: 100px;"></td>
+                              <td>Maruti Swift</td>
+                              <td>₹550</td>
+                              <td>₹3200</td>
+                              <td>₹28,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                             
+                          </tr>
+                          <tr>
+                              <td><img src="images/Mahindra Thar.webp" alt="Mahindra Thar" style="width: 100px;"></td>
+                              <td>Mahindra Thar</td>
+                              <td>₹700</td>
+                              <td>₹5000</td>
+                              <td>₹40,000</td>
+                              <td>
+                                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+                              </td>
+                             
+                          </tr>
+                      </tbody>  
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Edit section-->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Edit Vehicle</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="editForm">
+              <input type="hidden" id="edit-id">
+              <div class="form-group">
+                <label for="edit-model">Car Model</label>
+                <input type="text" class="form-control" id="edit-model">
+              </div>
+              <div class="form-group">
+                <label for="edit-hour-rate">Per Hour Rate</label>
+                <input type="text" class="form-control" id="edit-hour-rate">
+              </div>
+              <div class="form-group">
+                <label for="edit-day-rate">Per Day Rate</label>
+                <input type="text" class="form-control" id="edit-day-rate">
+              </div>
+              <div class="form-group">
+                <label for="edit-leasing">Leasing</label>
+                <input type="text" class="form-control" id="edit-leasing">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="save-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col text-center">
+              <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addModal">
+                  Add New Car
+              </button>
+          </div>
+      </div>
+  </div>
+
+      
+        <!-- Add Vehicle Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="addModalLabel">Add New Car</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="" >
+                  <span aria-hidden="true">&times;</span>
+              </button>        
+          </div>
+          <div class="modal-body">
+              <form id="addForm">
+                  <div class="form-group">
+                      <label for="add-model">Car Model</label>
+                      <input type="text" class="form-control" id="add-model" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="add-hour-rate">Per Hour Rate</label>
+                      <input type="number" class="form-control" id="add-hour-rate" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="add-day-rate">Per Day Rate</label>
+                      <input type="number" class="form-control" id="add-day-rate" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="add-leasing">Leasing Amount</label>
+                      <input type="number" class="form-control" id="add-leasing" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="image-option">Choose Image Option</label>
+                      <select class="form-control" id="image-option" required>
+                          <option value="upload">Upload Image</option>
+                          <option value="url">Provide Image URL</option>
+                          <option value="path">Provide Image Path</option>
+                      </select>
+                  </div>
+                  <div class="form-group d-none" id="image-upload-group">
+                      <label for="add-image">Car Image</label>
+                      <input type="file" class="form-control-file" id="add-image" accept="image/*">
+                  </div>
+                  <div class="form-group d-none" id="image-url-group">
+                      <label for="add-image-url">Image URL</label>
+                      <input type="url" class="form-control" id="add-image-url" placeholder="Enter image URL">
+                  </div>
+                  <div class="form-group d-none" id="image-path-group">
+                      <label for="add-image-path">Image Path</label>
+                      <input type="text" class="form-control" id="add-image-path" placeholder="Enter image path relative to project directory">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Vehicle</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Online Taxi</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Edit button click handler
+  document.querySelectorAll('.edit-btn').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const row = this.closest('tr');
+      const id = row.dataset.id;
+      // Fetch current data
+      const carModel = row.children[1].textContent;
+      const perHourRate = row.children[2].textContent;
+      const perDayRate = row.children[3].textContent;
+      const leasing = row.children[4].textContent;
+      
+      // Show edit form with current data (You can create a modal or a separate page for editing)
+      const editForm = `
+  <form id="edit-form">
+    <input type="hidden" name="id" value="${id}">
+    <div class="form-group">
+      <label for="model">Car Model:</label>
+      <input type="text" name="model" value="${carModel}" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="per-hour-rate">Per Hour Rate:</label>
+      <input type="number" name="per-hour-rate" value="${perHourRate}" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="per-day-rate">Per Day Rate:</label>
+      <input type="number" name="per-day-rate" value="${perDayRate}" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="leasing">Leasing Amount:</label>
+      <input type="number" name="leasing" value="${leasing}" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="image-option">Choose Image Option:</label>
+      <select class="form-control" id="image-option" name="image-option" required>
+        <option value="upload">Upload Image</option>
+        <option value="url">Provide Image URL</option>
+        <option value="path">Provide Image Path</option>
+      </select>
+    </div>
+    <div class="form-group" id="image-upload-group">
+      <label for="image-upload">Car Image:</label>
+      <input type="file" class="form-control-file" id="image-upload" name="image-upload" accept="image/*">
+    </div>
+    <div class="form-group d-none" id="image-url-group">
+      <label for="image-url">Image URL:</label>
+      <input type="url" class="form-control" id="image-url" name="image-url" placeholder="Enter image URL">
+    </div>
+    <div class="form-group d-none" id="image-path-group">
+      <label for="image-path">Image Path:</label>
+      <input type="text" class="form-control" id="image-path" name="image-path" placeholder="Enter image path relative to project directory">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+`;
+
+
+      
+      document.body.insertAdjacentHTML('beforeend', `<div id="edit-modal">${editForm}</div>`);
+      
+      document.getElementById('edit-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Process the form submission
+        const formData = new FormData(this);
+        // You would typically send this data to your server to update the record
+        console.log('Edited Data:', Object.fromEntries(formData.entries()));
+        
+        // Remove the modal
+        document.getElementById('edit-modal').remove();
+      });
+    });
+  });
+
+  // Delete button click handler
+  document.querySelectorAll('.delete-btn').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const row = this.closest('tr');
+      const id = row.dataset.id;
+      
+      // Confirm deletion
+      if (confirm('Are you sure you want to delete this vehicle?')) {
+        // Perform the delete operation
+        // You would typically send a request to your server to delete the record
+        console.log('Deleting ID:', id);
+        
+        // Remove the row from the table
+        row.remove();
+      }
+    });
+  });
+});
+
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Edit button click handler
+        document.querySelectorAll('.edit-btn').forEach(button => {
+          button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const row = this.closest('tr');
+            const id = row.dataset.id;
+
+            // Populate the modal with the row data
+            document.getElementById('edit-id').value = id;
+            document.getElementById('edit-model').value = row.children[1].textContent.trim();
+            document.getElementById('edit-hour-rate').value = row.children[2].textContent.trim();
+            document.getElementById('edit-day-rate').value = row.children[3].textContent.trim();
+            document.getElementById('edit-leasing').value = row.children[4].textContent.trim();
+
+            // Show the modal
+            $('#editModal').modal('show');
+          });
+        });
+
+        // Save button click handler
+        document.getElementById('save-btn').addEventListener('click', function() {
+          const id = document.getElementById('edit-id').value;
+          const carModel = document.getElementById('edit-model').value.trim();
+          const perHourRate = document.getElementById('edit-hour-rate').value.trim();
+          const perDayRate = document.getElementById('edit-day-rate').value.trim();
+          const leasing = document.getElementById('edit-leasing').value.trim();
+
+          // Validate input
+          if (carModel && perHourRate && perDayRate && leasing) {
+            console.log('Saving Data:', { id, carModel, perHourRate, perDayRate, leasing });
+
+            // Update the row data
+            const row = document.querySelector(`tr[data-id="${id}"]`);
+            row.children[1].textContent = carModel;
+            row.children[2].textContent = perHourRate;
+            row.children[3].textContent = perDayRate;
+            row.children[4].textContent = leasing;
+
+            // Hide the modal
+            $('#editModal').modal('hide');
+          } else {
+            alert('Please fill in all fields.');
+          }
+        });
+
+        // Delete button click handler
+        document.querySelectorAll('.delete-btn').forEach(button => {
+          button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const row = this.closest('tr');
+            const id = row.dataset.id;
+
+            // Confirm deletion
+            if (confirm('Are you sure you want to delete this vehicle?')) {
+              console.log('Deleting ID:', id);
+
+              // Remove the row from the table
+              row.remove();
+            }
+          });
+        });
+      });
+    </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle Add Vehicle Form Submission
+    document.getElementById('addForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Get form values
+        const model = document.getElementById('add-model').value;
+        const hourRate = document.getElementById('add-hour-rate').value;
+        const dayRate = document.getElementById('add-day-rate').value;
+        const leasing = document.getElementById('add-leasing').value;
+        
+        // Create a new table row
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td><img src="images/placeholder.webp" alt="${model}" style="width: 100px;"></td>
+            <td>${model}</td>
+            <td>₹${hourRate}</td>
+            <td>₹${dayRate}</td>
+            <td>${leasing === 'yes' ? '₹40,000' : '₹0'}</td>
+            <td>
+                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn" data-bs-toggle="modal" data-bs-target="#editModal">Edit</a>
+                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+            </td>
+        `;
+        
+        // Append new row to the table body
+        const tableBody = document.querySelector('table tbody');
+        tableBody.appendChild(newRow);
+        
+        // Close the modal and reset the form
+        $('#addModal').modal('hide');
+        document.getElementById('addForm').reset();
+    });
+
+    // Handle Edit Button Clicks
+    document.querySelector('table').addEventListener('click', function(event) {
+        if (event.target.classList.contains('edit-btn')) {
+            const row = event.target.closest('tr');
+            // Populate the edit modal with current row data
+            document.getElementById('edit-model').value = row.cells[1].textContent;
+            document.getElementById('edit-hour-rate').value = row.cells[2].textContent.replace('₹', '');
+            document.getElementById('edit-day-rate').value = row.cells[3].textContent.replace('₹', '');
+            document.getElementById('edit-leasing').value = row.cells[4].textContent === '₹40,000' ? 'yes' : 'no';
+            // Store row reference for later use
+            document.getElementById('edit-id').value = row.rowIndex;
+        }
+    });
+
+    // Handle Save Changes in Edit Modal
+    document.getElementById('save-btn').addEventListener('click', function() {
+        const rowIndex = document.getElementById('edit-id').value;
+        const row = document.querySelector('table').rows[rowIndex];
+        
+        // Update row with new values
+        row.cells[1].textContent = document.getElementById('edit-model').value;
+        row.cells[2].textContent = `₹${document.getElementById('edit-hour-rate').value}`;
+        row.cells[3].textContent = `₹${document.getElementById('edit-day-rate').value}`;
+        row.cells[4].textContent = document.getElementById('edit-leasing').value === 'yes' ? '₹40,000' : '₹0';
+        
+        // Close the modal
+        $('#editModal').modal('hide');
+    });
+
+    // Handle Delete Button Clicks
+    document.querySelector('table').addEventListener('click', function(event) {
+        if (event.target.classList.contains('delete-btn')) {
+            if (confirm('Are you sure you want to delete this vehicle?')) {
+                const row = event.target.closest('tr');
+                row.remove();
+            }
+        }
+    });
+});
+
+</script>
+<script>
+  
+document.addEventListener('DOMContentLoaded', function() {
+  const imageOptionSelect = document.getElementById('image-option');
+  const imageUploadGroup = document.getElementById('image-upload-group');
+  const imageUrlGroup = document.getElementById('image-url-group');
+  const imagePathGroup = document.getElementById('image-path-group');
+
+  // Initialize visibility based on the selected option
+  function updateImageFields() {
+      const selectedOption = imageOptionSelect.value;
+      if (selectedOption === 'upload') {
+          imageUploadGroup.classList.remove('d-none');
+          imageUrlGroup.classList.add('d-none');
+          imagePathGroup.classList.add('d-none');
+      } else if (selectedOption === 'url') {
+          imageUploadGroup.classList.add('d-none');
+          imageUrlGroup.classList.remove('d-none');
+          imagePathGroup.classList.add('d-none');
+      } else {
+          imageUploadGroup.classList.add('d-none');
+          imageUrlGroup.classList.add('d-none');
+          imagePathGroup.classList.remove('d-none');
+      }
+  }
+
+  // Add event listener for image option changes
+  imageOptionSelect.addEventListener('change', updateImageFields);
+
+  // Initial call to set up the form
+  updateImageFields();
+});
+</script>
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const addForm = document.getElementById('addForm');
+    const imageOptionSelect = document.getElementById('image-option');
+    const imageUploadGroup = document.getElementById('image-upload-group');
+    const imageUrlGroup = document.getElementById('image-url-group');
+    const imagePathGroup = document.getElementById('image-path-group');
+    const vehicleTableBody = document.querySelector('#vehicle-table tbody'); // Adjust selector to your table
+
+    // Function to handle form submission
+    addForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Capture form data
+        const model = document.getElementById('add-model').value;
+        const perHourRate = document.getElementById('add-hour-rate').value;
+        const perDayRate = document.getElementById('add-day-rate').value;
+        const leasing = document.getElementById('add-leasing').value;
+        const imageOption = imageOptionSelect.value;
+
+        let imagePath = '';
+
+        if (imageOption === 'upload') {
+            const imageUpload = document.getElementById('add-image').files[0];
+            if (imageUpload) {
+                imagePath = URL.createObjectURL(imageUpload); // Create a temporary URL for the uploaded image
+            }
+        } else if (imageOption === 'url') {
+            imagePath = document.getElementById('add-image-url').value;
+        } else if (imageOption === 'path') {
+            imagePath = document.getElementById('add-image-path').value;
+        }
+
+        // Create a new row in the table
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td><img src="${imagePath}" alt="${model}" style="width: 100px;"></td>
+            <td>${model}</td>
+            <td>₹${perHourRate}</td>
+            <td>₹${perDayRate}</td>
+            <td>₹${leasing}</td>
+            <td>
+                <a href="#" class="btn btn-primary btn-sm d-inline mx-1 edit-btn">Edit</a>
+                <a href="#" class="btn btn-danger btn-sm d-inline mx-1 delete-btn">Delete</a>
+            </td>
+        `;
+        vehicleTableBody.appendChild(newRow);
+
+        // Close the modal
+        $('#addModal').modal('hide');
+
+        // Reset the form
+        addForm.reset();
+        imageUploadGroup.classList.remove('d-none');
+        imageUrlGroup.classList.add('d-none');
+        imagePathGroup.classList.add('d-none');
+    });
+
+    // Function to handle image option changes
+    function updateImageFields() {
+        const selectedOption = imageOptionSelect.value;
+        if (selectedOption === 'upload') {
+            imageUploadGroup.classList.remove('d-none');
+            imageUrlGroup.classList.add('d-none');
+            imagePathGroup.classList.add('d-none');
+        } else if (selectedOption === 'url') {
+            imageUploadGroup.classList.add('d-none');
+            imageUrlGroup.classList.remove('d-none');
+            imagePathGroup.classList.add('d-none');
+        } else {
+            imageUploadGroup.classList.add('d-none');
+            imageUrlGroup.classList.add('d-none');
+            imagePathGroup.classList.remove('d-none');
+        }
+    }
+
+    // Add event listener for image option changes
+    imageOptionSelect.addEventListener('change', updateImageFields);
+
+    // Initial call to set up the form
+    updateImageFields();
+});
+
+</script>
+</body>
+</html>
+  
+
