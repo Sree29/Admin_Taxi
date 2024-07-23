@@ -138,7 +138,7 @@ booking
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -170,20 +170,6 @@ booking
           <span>Pricing</span>
         </a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="Login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-    </li><!-- End Login Page Nav -->
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="Report.html">
-        <i class="bi bi-printer"></i>
-        <span>Report</span>
-      </a>
-    </li>
       
       <li class="nav-item">
         <a class="nav-link collapsed" href="Contact.html">
@@ -245,7 +231,7 @@ booking
           <div class="col-lg-12">
             <h2 style="text-align: center;" >Today's Booking Details</h2>
               <!-- Table with stripped rows -->
-               <table class="table datatable">
+               <table class="table datatable  table-responsive">
                 <div class="text-end mt-3 mr-2">
                   <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">Add New Booking</button>
                 </div>
@@ -267,9 +253,9 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square "></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash "></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -278,9 +264,9 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>8am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -289,134 +275,22 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>11am</td>
-                  
-                    <td>
-                      <!-- Add buttons in a div with inline styling or class -->
-                      <div style="display: flex; gap: 0.5rem;">
-                        <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                        <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                        <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                       </div>
                     </td>
+                    
                   </tr>
                   <tr>
                     <td>Thrissur</td>
-                    <td>Plakkad</td>
+                    <td>Palakkad</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Adoor</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>1pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Wayanad</td>
-                    <td>Ernakulam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>5am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thiruvalla</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kannur</td>
-                    <td>Wayanad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mavelikkara</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                     
                   </tr>
@@ -426,143 +300,11 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mavelikkara</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Kollam</td>
-                    <td>Kottayam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Ernakulam</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>8am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mavelikkara</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>Adoor</td>
@@ -570,10 +312,11 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>1pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                    
                   </tr>
                   <tr>
                     <td>Wayanad</td>
@@ -581,10 +324,11 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>5am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                   
                   </tr>
                   <tr>
                     <td>Thiruvalla</td>
@@ -592,21 +336,23 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                    
                   </tr>
                   <tr>
                     <td>Kannur</td>
                     <td>Wayanad</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>11am</td>
+                    <td class="d-flex ">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                   
                   </tr>
                   <tr>
                     <td>Kottayam</td>
@@ -614,363 +360,611 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                    
                   </tr>
                   <tr>
                     <td>Mavelikkara</td>
+                    <td>Adoor</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>10am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>Wayanad</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>8am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Thrissur</td>
+                    <td>Palakkad</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>9am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                   
+                  </tr>
+                  <tr>
+                    <td>Thiruvalla</td>
+                    <td>Pala</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>3pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Ernakulam</td>
+                    <td>Pathanamthitta</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>8am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Thrissur</td>
+                    <td>Kochi</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>10pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottayam</td>
+                    <td>Idukki</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>1pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>Thiruvananthapuram</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>6am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ottapalam</td>
                     <td>Kollam</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
                     <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
-                  </tr>
                   <tr>
-                    <td>Kottayam</td>
+                    <td>Pandalam</td>
                     <td>Pala</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>4pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
+                    <td>Chennai</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>5am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
-                  <tr>
-                    <td>Thrissur</td>
+                    <td>Aluva</td>
                     <td>Plakkad</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mavelikkara</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Kottayam</td>
-                    <td>Pala</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Thrissur</td>
-                    <td>Plakkad</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>10pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
 
                   <tr>
                     <td>Kollam</td>
-                    <td>Kottayam</td>
+                    <td>Aroor</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>7pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Ernakulam</td>
-                    <td>Kollam</td>
-                    <td>19/07/2024</td>
-                    <td>19/07/2024</td>
-                    <td>8am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mavelikkara</td>
-                    <td>Kollam</td>
+                    <td>Kozhencherry</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Munnar</td>
+                    <td>Kollam</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>7am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Thrissur</td>
-                    <td>Plakkad</td>
+                    <td>Kozhikode</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>1pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Alappuzha</td>
+                    <td>Aranmula</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>7.30am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Athirapally</td>
+                    <td>Kollam</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>5pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottarakkara</td>
+                    <td>Kumily</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>5.30am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Thiruvalla</td>
+                    <td>Mananthavady</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>2.55pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kannur</td>
+                    <td>Devikulam</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>3pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottayam</td>
+                    <td>Malappuram</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>4pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mavelikkara</td>
+                    <td>Thekkady</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>8am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>Ponnani</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>7pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  
+                  </tr>
+                  <tr>
+                    <td>Thrissur</td>
+                    <td>Thenmala</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>6am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottayam</td>
+                    <td>Malampuzha</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>2pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>Guruvayur</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>6am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Peerumedu</td>
+                    <td>Plakkad</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>11am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottayam</td>
+                    <td>Kalpetta</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>2pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Ponmudi</td>
                     <td>Pathanamthitta</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>7.30am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                
+                  </tr>
+                  <tr>
+                    <td>Mavelikkara</td>
+                    <td>Ranni</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>8am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Kottayam</td>
+                    <td>Konni</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>5pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>Nilambur</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>10am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Thrissur</td>
+                    <td>Vagamon</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>4am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Kovalam</td>
+                    <td>Kottayam</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>2am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+    
+                  </tr>
+                  <tr>
+                    <td>Kumarakam</td>
+                    <td>Kollam</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>11am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mavelikkara</td>
+                    <td>Varkala</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>8am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Thrissur</td>
+                    <td>Mavelipuram</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>11am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Alappuzha</td>
+                    <td>ochira</td>
+                    <td>19/07/2024</td>
+                    <td>19/07/2024</td>
+                    <td>5am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Adoor</td>
-                    <td>Kollam</td>
+                    <td>Tamil Nadu</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>1pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>1oam</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Wayanad</td>
-                    <td>Ernakulam</td>
+                    <td>pattambi</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>5am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>7am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Thiruvalla</td>
-                    <td>Pathanamthitta</td>
+                    <td>kazhakoottam</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>2.30pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Kannur</td>
-                    <td>Wayanad</td>
+                    <td>thalassery</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>2pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>9pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Kottayam</td>
+                    <td>Elavumthitta</td>
                     <td>Pala</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>10pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Mavelikkara</td>
+                    <td>nedumangad</td>
                     <td>Kollam</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>11.30am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
+                    <td>nedumbassery</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>3am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Thrissur</td>
-                    <td>Plakkad</td>
+                    <td>changanassery</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>10.45am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Kottayam</td>
-                    <td>Pala</td>
+                    <td>Thiroor</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>3.30pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
+                    <td>Attingal</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>9am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
-                  </tr>
                   <tr>
                     <td>Thrissur</td>
-                    <td>Plakkad</td>
+                    <td>Haripad</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>10.40am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
 
                   </tr>
                   <tr>
                     <td>Kottayam</td>
-                    <td>Pala</td>
+                    <td>Ambalapuzha</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>7pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
-                  </tr>
                   <tr>
                     <td>Alappuzha</td>
-                    <td>Pathanamthitta</td>
+                    <td>Ayoor</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>8.30am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
+                   
                   </tr>
                   <tr>
                     <td>Mavelikkara</td>
-                    <td>Kollam</td>
+                    <td>Chittar</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>11am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Kottayam</td>
-                    <td>Pala</td>
+                    <td>Patahnapuram</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>3pm</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>3.30pm</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -979,20 +973,20 @@ booking
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
                     <td>7am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
                     <td>Thrissur</td>
-                    <td>Plakkad</td>
+                    <td>V.Kottayam</td>
                     <td>19/07/2024</td>
                     <td>19/07/2024</td>
-                    <td>10am</td>
-                    <td>
-                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1">Edit</button>
-                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1">Delete</button>
+                    <td>11am</td>
+                    <td class="d-flex">
+                      <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editModal" data-id="1"> <i class="bi bi-pencil-square"></i></button>
+                      <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="1"><i class="bi bi-trash"></i></button>
                     </td>
                     
                   </tr>

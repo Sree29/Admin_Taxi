@@ -136,7 +136,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -168,21 +168,6 @@
           <span>Pricing</span>
         </a>
       </li>
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="Login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-    </li><!-- End Login Page Nav -->
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="Report.html">
-        <i class="bi bi-printer"></i>
-        <span>Report</span>
-      </a>
-    </li>
       <li class="nav-item">
         <a class="nav-link collapsed" href="Contact.html">
           <i class="bi bi-envelope"></i>
@@ -244,12 +229,12 @@
     <section class="section">   
       
        <div class="card">
-        <div class="card-body">
+        <div class="card-body table-responsive" >
           <table class="table table-striped">
             <thead>
             <tr>
               <th scope="col">Service ID</th>
-              <th scope="col">Name</th>
+              <th scope="col">Service Name</th>
               <th scope="col">Description</th>
               <th scope="col">Price</th>
               <th scope="col">Action</th>
@@ -261,9 +246,9 @@
           <td>Local Car Rentals</td>
           <td>Taxi service to travel <br> different places in city.</td>
           <td>₹200/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" >Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -271,9 +256,9 @@
           <td>Airport Taxi</td>
           <td>Taxi service to and <br>from the airport.</td>
           <td>₹300/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -281,9 +266,9 @@
           <td>Out Station Taxi</td>
           <td>Taxi service for <br> out-of-town travel.</td>
           <td>₹200/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -291,9 +276,9 @@
           <td>Corporate Car Rentals</td>
           <td>Rental services for<br> corporate needs and events.</td>
           <td>₹200/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -301,9 +286,9 @@
           <td>Tour Packages</td>
           <td>City tours: Customized city tours for tourists.</td>
           <td>₹200/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
         <tr>
@@ -311,9 +296,9 @@
           <td>Event Transportation</td>
           <td>Transportation solutions for <br>weddings, parties, and other events.</td>
           <td>₹300/hour</td>
-          <td class="button-container">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
-            <button class="btn btn-danger btn-sm delete-btn">Delete</button>
+          <td class="button-container d-flex">
+            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
           </td>
         </tr>
       </tbody>
@@ -335,6 +320,10 @@
       <div class="modal-body">
         <form id="editForm">
           <div class="form-group">
+            <label for="serviceName">Service Id</label>
+            <input type="text" class="form-control" id="serviceName" required>
+          </div>
+          <div class="form-group">
             <label for="serviceName">Service Name</label>
             <input type="text" class="form-control" id="serviceName" required>
           </div>
@@ -343,7 +332,7 @@
             <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
           </div>
           <div class="form-group">
-            <label for="serviceRate">Rate</label>
+            <label for="serviceRate">Price</label>
             <input type="text" class="form-control" id="serviceRate" required>
           </div>
         </form>

@@ -135,7 +135,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -167,21 +167,6 @@
           <span>Pricing</span>
         </a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="Login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-    </li><!-- End Login Page Nav -->
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="Report.html">
-        <i class="bi bi-printer"></i>
-        <span>Report</span>
-      </a>
-    </li>
-      
       <li class="nav-item">
         <a class="nav-link collapsed" href="Contact.html">
           <i class="bi bi-envelope"></i>
@@ -203,23 +188,24 @@
         </ol>
       </nav>
     </div><!-- End Page Title -->
-    <div class="col-12 text-right mt-4 mb-3 mr-4"> <!-- Add mb-3 for bottom margin -->
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addCarModal">
-        Add New Car
-      </button>
-    </div>
+
 
           <section class="section">
             <div class="container">
               <div class="row">
+                <div class="col-12 text-right mt-4 mb-3 mr-4"> <!-- Add mb-3 for bottom margin -->
+                  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addCarModal">
+                    Add New Car
+                  </button>
+                </div>
           <!-- Car 1 Column -->
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <img src="images/Ford Fiesta_1.webp" class="card-img-top" alt="Ford Fiesta">
               <div class="card-body">
                 <h5 class="card-title">Ford Fiesta<br>₹4000 /day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -230,8 +216,8 @@
               <img src="images/Hyudai Aura.webp" class="card-img-top" alt="Car 2">
               <div class="card-body">
                 <h5 class="card-title">Hyundai Aura<br>₹3000/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -242,8 +228,8 @@
               <img src="images/Hyundai Creta.webp" class="card-img-top" alt="Car 3">
               <div class="card-body">
                 <h5 class="card-title">Hyundai Creta<br>₹3000/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -254,8 +240,8 @@
               <img src="images/Innova 7+1.webp" class="card-img-top" alt="Car 4">
               <div class="card-body">
                 <h5 class="card-title">Innova 7+1<br>₹2000/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -266,8 +252,8 @@
               <img src="images/Mahindra Marazzo.webp" class="card-img-top" alt="Car 5">
               <div class="card-body">
                 <h5 class="card-title">Mahindra Marazzo<br>₹2500 /day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -278,8 +264,8 @@
               <img src="images/Mahindra-Verito.webp" class="card-img-top" alt="Car 6">
               <div class="card-body">
                 <h5 class="card-title"> Mahindra Verito<br>₹2000/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -290,8 +276,8 @@
               <img src="images/Maruti Suzuki Alto.webp" class="card-img-top" alt="Car 7">
               <div class="card-body">
                 <h5 class="card-title">Maruti Suzuki Alto<br>₹2500/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -302,8 +288,8 @@
               <img src="images/img1.webp" class="card-img-top" alt="Car 8">
               <div class="card-body">
                 <h5 class="card-title">Maruti Suzuki Celerio<br>₹3000/day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
@@ -314,8 +300,8 @@
               <img src="images/Suzuki Swift Dzire1.webp" class="card-img-top" alt="Car 9">
               <div class="card-body">
                 <h5 class="card-title">Suzuki Swift Azire<br>₹2000 /day</h5>
-                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2">Edit</button>
-                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2">Delete</button>
+                <button class="btn btn-primary btn-sm edit-btn" data-bs-toggle="modal" data-bs-target="#editCarModal" data-id="2"><i class="bi bi-pencil-square"></i></button>
+                <button class="btn btn-danger btn-sm delete-btn" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="2"><i class="bi bi-trash"></i></button>
               </div>
             </div>
           </div>
