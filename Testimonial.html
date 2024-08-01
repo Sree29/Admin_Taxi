@@ -38,6 +38,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+
+  
 </head>
 
 <body>
@@ -47,7 +50,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="images/taxiii.png" width="50px" height="100" alt="Logo">
+        <img src="images/taxiii.png" alt="Online Taxi Logo" style="height: 100px; width: 50px;">
         <span class="d-none d-lg-block">City Drivers</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -68,6 +71,8 @@
             <i class="bi bi-search"></i>
           </a>
         </li><!-- End Search Icon-->
+
+        
 
         <li class="nav-item dropdown pe-3">
 
@@ -149,7 +154,7 @@
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="service.html">
+        <a class="nav-link collapsed" href="service.html">
           <i class="bi bi-card-checklist"></i>
           <span>Services</span>
         </a>
@@ -161,7 +166,6 @@
           <span>Our Cars</span>
         </a>
       </li>
-      
       <li class="nav-item">
         <a class="nav-link collapsed" href="pricing.html">
           <i class="bi bi-cash"></i>
@@ -169,7 +173,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="Testimonial.html">
+        <a class="nav-link " href="Testimonial.html">
           <i class="bi bi-person-circle"></i>
           <span>Testimonial</span>
         </a>
@@ -180,183 +184,96 @@
           <span>Contact</span>
         </a>
       </li><!-- End Contact Page Nav -->
+
     </ul>
 
   </aside><!-- End Sidebar-->
+
   <main id="main" class="main">
 
-    <div class="pagetit">
-      <h1>Services</h1>
+    <div class="pagetitle">
+      <h1>Testimonial</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Services</li>
-          <!-- <li class="breadcrumb-item active">General</li> -->
+          <li class="breadcrumb-item active">Testimonial</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
-    <div class="text-end mt-3 mb-3">
-      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">Add New Service</button>
-    </div>
-    <!-- Modal -->
-<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="addModalLabel">Add New Service</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <!-- Form for adding new service -->
-              <form>
-                  <div class="mb-3">
-                      <label for="serviceName" class="form-label">Service Name</label>
-                      <input type="text" class="form-control" id="serviceName" required>
-                  </div>
-                  <div class="mb-3">
-                      <label for="serviceDescription" class="form-label">Description</label>
-                      <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
-                  </div>
-                  <div class="mb-3">
-                      <label for="servicePrice" class="form-label">Price</label>
-                      <input type="number" class="form-control" id="servicePrice" required>
-                  </div>
-              </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Add Service</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-             
-          </div>
+
+    <section class="section dashboard">
+      <div class="container-fluid">
+    
+        <!-- Testimonials Section -->
+        <div class="row">
+    
+          <!-- Testimonial Card 1 -->
+          <div class="col-md-6 mb-3">
+            <div class="card" style="background-color:#FFE4E1; color: #333; border: 1px solid #000;">
+              <div class="card-body">
+                <div class="profile-icon" style="position: absolute; top: 15px; left: 15px; width: 4rem; height: 4rem; border-radius: 50%; border: 1px solid #000; overflow: hidden;">
+                  <img src="images/profile-icon.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px 15px 15px 80px;">
+                  <p style="color: black;">I had an amazing experience using this car booking service. The website was very user-friendly and I was able to book a ride within minutes. The driver arrived on time, and the car was clean and comfortable. I highly recommend this service to anyone looking for a reliable and convenient way to book a car.</p>
+                  <h5 class="card-title">John David</h5>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Card 1 -->
+    
+          <!-- Testimonial Card 2 -->
+          <div class="col-md-6 mb-3">
+            <div class="card" style="background-color: #d1e7dd ; color: #333; border: 1px solid #000;">
+              <div class="card-body">
+                <div class="profile-icon" style="position: absolute; top: 15px; left: 15px; width: 4rem; height: 4rem; border-radius: 50%; border: 1px solid #000; overflow: hidden;">
+                  <img src="images/profile-icon.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px 15px 15px 80px;">
+                  <p style="color: black;">My experience with this car booking service was exceptional from start to finish. The website's intuitive design made the booking process straightforward, allowing me to secure a ride in just a few clicks. The driver was punctual and professional, and the vehicle was impeccably clean and well-maintained.</p>
+                  <h5 class="card-title">George Mathew</h5>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Card 2 -->
+    
+          <!-- Testimonial Card 3 -->
+          <div class="col-md-6 mb-3">
+            <div class="card" style="background-color:#ACE1AF  ; color: #333; border: 1px solid #000;">
+              <div class="card-body">
+                <div class="profile-icon" style="position: absolute; top: 15px; left: 15px; width: 4rem; height: 4rem; border-radius: 50%; border: 1px solid #000; overflow: hidden;">
+                  <img src="images/profile-icon.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px 15px 15px 80px;">
+                  <p style="color: black;">I had a wonderful experience with this car booking service. The website was exceptionally easy to navigate, enabling me to book a ride in no time. The driver was prompt and professional, and the car was very comfortable. I strongly recommend this service to anyone in search of a user-friendly transportation solution.</p>
+                  <h5 class="card-title">Emma Watson</h5>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Card 3 -->
+    
+          <!-- Testimonial Card 4 -->
+          <div class="col-md-6 mb-3">
+            <div class="card" style="background-color: #FFFDD0 ; color: #333; border: 1px solid #000;">
+              <div class="card-body">
+                <div class="profile-icon" style="position: absolute; top: 15px; left: 15px; width: 4rem; height: 4rem; border-radius: 50%; border: 1px solid #000; overflow: hidden;">
+                  <img src="images/profile-icon.jpg" alt="Profile Image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 15px 15px 15px 80px;">
+                  <p style="color: black;">The service I received from this car booking platform was outstanding. The booking system was efficient and easy to use, and the driver was friendly and professional. The car was in excellent condition, and the entire ride was comfortable and pleasant. I would definitely use this service again and recommend it to others.</p>
+                  <h5 class="card-title">Alice Johnson</h5>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Testimonial Card 4 -->
+    
+        </div>
       </div>
-  </div>
-</div>
-
-    <section class="section">   
-      
-       <div class="card">
-        <div class="card-body table-responsive" >
-          <table class="table table-striped">
-            <thead>
-            <tr>
-              <th scope="col">Service ID</th>
-              <th scope="col">Service Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Price</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody id="serviceTableBody">
-        <tr>
-          <th scope="row">1</th>
-          <td>Local Car Rentals</td>
-          <td>Taxi service to travel <br> different places in city.</td>
-          <td>₹200/hour</td>
-          <td class="button-container d-flex">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
-            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Airport Taxi</td>
-          <td>Taxi service to and <br>from the airport.</td>
-          <td>₹300/hour</td>
-          <td class="button-container d-flex">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
-            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Out Station Taxi</td>
-          <td>Taxi service for <br> out-of-town travel.</td>
-          <td>₹200/hour</td>
-          <td class="button-container d-flex">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
-            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Corporate Car Rentals</td>
-          <td>Rental services for<br> corporate needs and events.</td>
-          <td>₹200/hour</td>
-          <td class="button-container d-flex">
-            <button class="btn btn-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal" ><i class="bi bi-pencil-square"></i></button>
-            <button class="btn btn-danger btn-sm delete-btn"><i class="bi bi-trash"></i></button>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-          
-  <!-- <button class="btn btn-success" data-toggle="modal" data-target="#editModal" id="addServiceBtn">Add Service</button> -->
-</div>
-
-<!-- Edit Modal -->
-<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="editModalLabel">Edit Service</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="editForm">
-          <div class="form-group">
-            <label for="serviceName">Service Id</label>
-            <input type="text" class="form-control" id="serviceName" required>
-          </div>
-          <div class="form-group">
-            <label for="serviceName">Service Name</label>
-            <input type="text" class="form-control" id="serviceName" required>
-          </div>
-          <div class="form-group">
-            <label for="serviceDescription">Description</label>
-            <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
-          </div>
-          <div class="form-group">
-            <label for="serviceRate">Price</label>
-            <input type="text" class="form-control" id="serviceRate" required>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-primary" id="saveChanges">Save Changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-  <script src="script.js"></script>
-
-        <style>
-          .button-container {
-            display: flex;
-            gap: 0.5rem; /* Adjust the gap as needed */
-          }
-        </style>
-        
-        
- 
-      <!-- End Table with stripped rows -->
-
-    </div>
-  </div>
- 
     </section>
-
+    
+    
+    
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -384,7 +301,10 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
